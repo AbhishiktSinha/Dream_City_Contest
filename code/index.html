@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dream City - Kotor</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(239, 241, 245);   
+        } 
+        footer {
+            font-size: small;
+            text-align: center;
+            padding: 3px;            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kotor</h1>
+        <p>An alcove in the history of Europe</p>
+    </header>
+    <nav id="nav_bar">
+        <a href="#description">Description</a>
+        <a href="#attraction">Attractions</a>
+        <a href="#statistics">Statistics</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#quotes">Quotes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="description">
+            <h2>City Description</h2>
+            <img width="750px" height="500px" src="olga-brajnovic-_nupO8tu6sg-unsplash.jpg" alt="kotor_montenegro">
+            <p>Kotor is a charming coastal town in Montenegro, located at the end of a scenic bay surrounded by towering mountains. It is a UNESCO World Heritage Site, known for its well-preserved medieval architecture and fortifications</p>
+            <p>Kotor offers a variety of attractions for visitors, from exploring the narrow streets and squares of the Old Town, to climbing the steep stairs to the San Giovanni Fortress, which offers stunning views of the bay and the town</p>
+            <p>Kotor is also a paradise for cat lovers, as the town is home to many stray cats that are cared for by locals and tourists alike.</p>
+        </section>
+
+        <hr>
+
+        <section id="attraction">
+            <h2>Popular Attractions</h2>
+            <h3>Main Attractions</h3>
+            <ol>
+                <li>San Giovanni's Fortress</li>
+                <li>Maritime Museum</li>
+                <li>Bay of Kotor</li>
+            </ol>
+            <h3>Local Favourites</h3>
+            <ul>
+                <li>Old Town
+                    <ul>
+                        <li>Palace of Drago Family</li>
+                        <li>Kotor Food Market</li>
+                        <li>Hard Rock Cafe</li>
+                    </ul>
+                </li>
+                <li>Cat Museum</li>
+                <li>Blue Cave</li>
+
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="statistics">
+            <h2>City Statistics</h2>
+            <table border="1px">
+                <thead>
+                    <td><b>Atrribute</b></td><td><b>Value</b></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Population</td><td>35,732</td>
+                    </tr>
+                    <tr>
+                        <td>Area in sq. km</td><td>335</td>
+                    </tr>
+                    <tr>
+                        <td>Hotels</td><td>460</td>
+                    </tr>
+                    <tr>
+                        <td>Tourist Attractions</td><td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Historical Landmarks</td><td>23</td>
+                    </tr>
+                    <tr>
+                        <td>Schools</td><td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Beaches</td><td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Ports</td><td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Airports</td><td>2</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="feedback">
+            <h2>We would love to hear from you!</h2>
+            <form method="POST">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"> 
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age" min="1" max="100">
+                <br>
+                <label for="select_favourite_attraction">Favourite Attraction: </label>
+                <select name="favourite_attraction" id="select_favourite_attraction">
+                    <option value=null></option>
+                    <option value="SAN_GIOVANNI'S FORTRESS">San Giovanni's Fortress</option>
+                    <option value="MARITIME_MUSEUM">Maritime Museum</option>
+                    <option value="BAY_OF_KOTOR">Bay of Kotor</option>
+                    <option value="DRAGO_FAMILY_PALACE">Palace of Drago Family</option>
+                    <option value="FOOD_MARKET">Kotor Food Market</option>
+                    <option value="HARD_ROCK_CAFE">Hard Rock Cafe</option>
+                    <option value="CAT_MUSEUM">Cat Museum</option>
+                    <option value="BLUE_CAVE">Blue Cave</option>
+                </select>
+                <br>
+                <label for="comments">Comments: </label>
+                <textarea name="comments" id="comments" cols="20" rows="5" placeholder="Tell us about your experience"></textarea>
+                <br>
+                <label for="subscription">Newsletter: </label>
+                <input type="checkbox" id="subscription" name="subscription">Subscribe to our newsletter
+                <br>
+                <input type="submit">
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="quotes">
+            <h2>Quotes from Citizens</h2>
+            <p>"Great port with breathtaking views" -Alex Genery</p>
+            <p>"Beautiful old streets, lots of sights and nice people" -Franz Koshorst</p>
+            <p>"Don't expect to get a restful sleep with all the cats causing a ruckus all night!"- Nick</p>
+        </section>
+
+        <hr>
+
+        <address id="contact">
+            <h2>Contact Us</h2>
+            <p><b>Office of the Tourism Ministry</b><br>Square of the Arms, Kotor, Montenegro</p>
+            <label for="kotor_mail">Email: </label>
+            <a href="mailto:travel.kotor@gmail.com" id="kotor_mail">travel.kotor@gmail.com</a>
+            <p>Phone: 83-010-231-353</p>            
+        </address>
+    </main>
+
+    <footer>
+        <p>&copy; Tourism Ministry Montenegro - Wild Beauty on the Adriatic</p>
+    </footer>
+</body>
+</html>
