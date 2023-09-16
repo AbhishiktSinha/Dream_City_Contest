@@ -1,4 +1,5 @@
-# Dream_City_Contest
+# Dream City Contest
+Contest submission for **Acciojob** contest of _Frontend Module 1_ held on September 16, 2023
 
 ## UI Inspiration and Instructions
 ### Header:
